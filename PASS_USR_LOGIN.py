@@ -8,6 +8,8 @@ import string
 import time
 import webbrowser
 import pprint as pprint
+import logging #Express VPN 
+from expressvpn import wrapper #Express VPN
 
 def get_forms(ses, url):
     ses = HTMLSession()
@@ -98,6 +100,12 @@ if __name__ == "__main__":
         print(input_tag)
 
     print(data)
+
+## EXPRESS VPN
+## pip install expressvpn-python (with expressvpn already installed)
+## expressvpn activate *******
+## expressvpn preferences set send_diagnostics false
+
 
 '''
 for end_digits in digits:
